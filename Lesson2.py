@@ -1,5 +1,7 @@
 #Probability
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 '''A store has 300 balls for sale, of which 100 are red and the rest are blue.
 Of the red ones, 20% are basketball and the rest are soccer. Knowing that there are 250 footballs'''
@@ -40,3 +42,10 @@ if prob_2 == (balls_df['football']['total']*balls_df['total']['blue'])/(balls)**
 else:
     indep = 'is not'
 print(f'The color {indep} independent of the game')
+
+x = ['basket','football']
+r = [rb,rf]
+b = [bb,bf]
+plt.bar(x,r, color='red')
+plt.bar(x,b, bottom=r, color='blue')
+plt.show()
