@@ -1,6 +1,7 @@
 #Discrete random variables
 import scipy.stats as st
 import matplotlib.pyplot as plt
+import numpy as np
 
 '''A university knows that 20% of its students drop out of the introductory statistics course.
 Assume that 20 students enrolled in that course this quarter.'''
