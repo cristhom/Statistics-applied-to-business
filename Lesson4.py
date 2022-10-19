@@ -1,7 +1,6 @@
 #Continuous random variables
 import scipy.stats as st
 import matplotlib.pyplot as plt
-import seaborn as sb
 import numpy as np
 
 '''A person with a good credit rating has an average debt of $15,015.
@@ -35,5 +34,5 @@ print(f'The probability is {prob:.2%}'.format())
 print()
 
 x = np.random.normal(mu, sd, 10000)
-plt.hist(x,100)
+plt.hist(x, 100)
 plt.show()
